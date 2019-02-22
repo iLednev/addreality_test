@@ -1,0 +1,1 @@
+"use strict";var button=document.querySelector(".button-up");window.addEventListener("scroll",function(){1e3<window.scrollY?button.classList.add("show-button"):button.classList.remove("show-button")}),button.addEventListener("click",function(){var t=setInterval(function(){0!==scrollY?window.scrollBy(0,-50):clearInterval(t)},10)});
