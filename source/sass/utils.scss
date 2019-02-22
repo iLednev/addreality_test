@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+}
+
+$beige: #dedbab;
+
+@mixin reset-list () {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin beige-block () {
+  background-color: $beige;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+@mixin beige-active-block () {
+  @include beige-block();
+
+  &:hover {
+    background-color: #cdca9a;
+  }
+
+  &:active {
+    background-color: #bcb989;
+  }
+}
+
+@mixin flex-center () {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

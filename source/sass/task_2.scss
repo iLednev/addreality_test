@@ -1,0 +1,42 @@
+.one-third {
+  padding-top: 10px;
+  width: 100%;
+  height: 990px;
+
+  font-size: 20px;
+  text-align: center;
+
+  background-color: #efefef;
+  border-bottom: 2px solid black;
+}
+
+.two-thirds {
+  width: 100%;
+  height: 2000px;
+
+  font-size: 20px;
+  text-align: center;
+}
+
+.button-up {
+  @include beige-active-block();
+
+  visibility: hidden;
+  position: fixed;
+  right: 40px;
+  bottom: 15px;
+  width: 100px;
+  height: 50px;
+
+  font-size: 18px;
+
+  box-shadow: none;
+  transform: translateY(80px);
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.show-button {
+  visibility: visible;
+  transform: translateY(0);
+}

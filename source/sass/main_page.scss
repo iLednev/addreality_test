@@ -1,0 +1,44 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.links {
+  @include reset-list();
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 840px;
+}
+
+.link {
+  @include flex-center();
+  @include beige-active-block();
+
+  margin-bottom: 20px;
+  width: 400px;
+  height: 400px;
+
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+
+  border-radius: 10px;
+}
+
+.git-link {
+  color: black;
+  font-size: 24px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}
